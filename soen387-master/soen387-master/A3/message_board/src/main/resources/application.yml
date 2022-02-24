@@ -1,0 +1,43 @@
+
+display:
+  number: 10
+
+spring:
+  datasource:
+    username: root
+    password: comp353
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/concordia?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvicationRunsMillis: 60000
+    minEvicatableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    filters: stat,wall
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+    initialization-mode: always
+  thymeleaf:
+    cache: false
+
+server:
+  tomcat:
+    uri-encoding: utf-8
+
+  #mybatis:
+#  config-location: classpath:mybatis/mybatis-config.xml
+# mapper-locations:
+#   - classpath:mybatis/mapper/*.xml
+
+      #schema:
+      # - classpath:sql/department.sql
+    #- classpath:sql/employee.sql
+  port: 8888

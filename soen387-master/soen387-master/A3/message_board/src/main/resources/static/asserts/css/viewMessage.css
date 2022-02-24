@@ -1,0 +1,18 @@
+.mb-4
+{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#date1,#date2
+{
+    size: 30px;
+}
+
+#div1
+{
+  margin-left: 480px;
+    text-align: center;
+}

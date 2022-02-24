@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <username>fred zhang</username>
+		<userId>fred</userId>
+        <password>524ac0ac145a534e5d604f7a2ebff0632909e8a4ee533109bd12ea7593a4a2b0</password>
+		<email>fredzhang@gmail.com</email>
+    </user>
+    <user>
+        <username>admin</username>
+		<userId>admin</userId>
+        <password>08e36c7995812df245083197d10cf63dfe2352b940d8e4a9557c05dd032ac8d4</password>
+		<email>admin@gmail.com</email>
+    </user>
+    <user>
+        <username>juyang gu</username>
+		<userId>gu</userId>
+        <password>bd1315a1f7b6afb5e4606a76736211ef65f130592e499111037fb93fb23251f0</password>
+		<email>junyanggu@gmail.com</email>
+    </user>
+</users>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Message</title>
+    <script src="/asserts/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/asserts/css/bootstrap.css">
+    <link rel="stylesheet" href="/asserts/css/postMessage.css">
+</head>
+<body>
+<img name="logo" class="mb-4" src="/asserts/img/newlogo.png" alt="">
+
+<div id="logout">
+    <form action="" th:action="@{/logout}" method="GET" >
+        <button class="btn btn-primary" type="submit" name="logout">Log out</button>
+    </form>
+</div>
+
+<div id="Layer1">
+        <form action="" th:action="@{/post}" method="post" enctype="multipart/form-data">
+<!--            <table align="center">-->
+<!--                <tr>-->
+<!--                    <td style=" font-weight:bold; width:10%" >Title：</td>-->
+<!--                    <td width="90%" ><input id="title1" name="title" /></td>-->
+<!--                </tr>-->
+
+<!--                <tr>-->
+<!--                    <td style="font-weight:bold; width:10%" > Content：</td>-->
+<!--                    <td >  <textarea id="textarea" cols="60" rows="10"  name="content"></textarea> </td>-->
+<!--                </tr>-->
+
+<!--                <tr>-->
+<!--                    <center>-->
+<!--                        <td style="font-weight:bold; width:10%" >Attachment：</td>-->
+<!--                        &lt;!&ndash;<td width="90%" ><input id="attachment" name="attachment" /></td>&ndash;&gt;-->
+<!--                        <td>-->
+<!--                            <input type="file" name="file">-->
+<!--                            &lt;!&ndash;<div th:if="${uploadMessage}">-->
+<!--                                <p th:text="${uploadMessage}"/>-->
+<!--                            </div>&ndash;&gt;-->
+<!--                        </td>-->
+<!--                    </center>-->
+<!--                </tr>-->
+
+<!--                <tr >-->
+<!--                    <td colspan="2">-->
+<!--                        <center>-->
+<!--                            <input type="submit" name="post" value="Post" />-->
+<!--                        </center>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </table>-->
+            <fieldset>
+                <div id="div1" class="form-group">
+                    <label>Title:</label>
+                    <input class="form-control" id="title1" name="title"></input>
+                </div>
+                <div id="div2" class="form-group">
+                    <label>Content:</label>
+                    <br>
+                    <textarea class="form-control" id="textarea" cols="60" rows="10"  name="content"}></textarea>
+                </div>
+                <div id="div3" class="form-group">
+                    <label id="attachment">Attachment:</label>
+                    <input id="file" class="form-control-file" type="file" name="file" >
+                </div>
+
+                <!--<td width="90%" ><input id="attachment" name="attachment" />-->
+
+                <!--<div th:if="${uploadMessage}">
+                   <p th:text="${uploadMessage}"/>
+                </div>-->
+            </fieldset>
+            <button class="btn btn-primary" type="submit" name="post">Post</button>
+        </form>
+        <form action="" th:action="@{/allPosts}" method="GET" >
+            <button class="btn btn-primary" type="submit" name="viewPost">View Posts</button>
+        </form>
+</div>
+
+<div id="content" style="text-align: center">
+    <h2>Post History</h2>
+    <table class="table table-hover" width="100%" id="table" th:each="post : ${posts}">
+        <tr id="message" >
+            <td>Title</td>
+            <td id="title" th:text="${post.getTitle()}"></td>
+        </tr>
+        <tr>
+            <td>Content</td>
+            <td id="text" style="width:21%; font-weight:normal;" th:text="${post.getContent()}"></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td id="date" th:text="${post.getPostDate()}"></td>
+        </tr>
+        <tr>
+            <td>Attachment</td>
+            <td>
+                <a th:href="@{/file/{postId} (postId = ${post.getPostId()})}" th:text="${post.getAttachment().getFileName()}"></a>
+            </td>
+            <td>
+                <a th:href="@{/deleteAttach/{postId} (postId = ${post.getPostId()})}">
+                    <button class="btn btn-primary">Delete Attach</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Edition</td>
+            <!-------------------add condition to display the message------------------->
+            <td id="edited" th:if="${post.isEdited() == true} " th:text = "Updated"></td>
+        </tr>
+        <br/><br/>
+
+        <form action="" th:action="@{/delete}" method="POST" >
+            <input type="text" name="postId" th:value="${post.getPostId()}" hidden/>
+            <button class="btn btn-primary" id="delete" type="submit" name="delete">Delete</button>
+        </form>
+        <form action="" th:action="@{/edit}" method="POST" >
+            <input type="text" name="postId" th:value="${post.getPostId()}" hidden/>
+            <button class="btn btn-primary" type="submit" name="edit">Edit</button>
+        </form>
+    </table>
+</div>
+</body>
+</html>

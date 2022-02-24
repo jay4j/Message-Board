@@ -1,0 +1,5 @@
+com\concordia\chatroom\service\ChatManager.class
+com\concordia\chatroom\entity\Message.class
+com\concordia\chatroom\controller\MessageController.class
+com\concordia\chatroom\service\ChatManagerImp.class
+com\concordia\chatroom\ChatroomApplication.class

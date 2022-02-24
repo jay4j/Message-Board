@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Soen387_a1_ChatRoom:war">
+    <output-path>$PROJECT_DIR$/A1/Soen387_a1_ChatRoom/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Soen387_a1_ChatRoom</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Soen387_a1_ChatRoom-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Soen387_a1_ChatRoom:war exploded" />
+    </root>
+  </artifact>
+</component>

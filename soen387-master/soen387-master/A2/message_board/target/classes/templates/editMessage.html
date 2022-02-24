@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/asserts/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/asserts/css/bootstrap.css">
+    <link rel="stylesheet" href="/asserts/css/editMessage.css">
+</head>
+<body>
+    <img name="logo" class="mb-4" src="../static/asserts/img/newlogo.png" alt="">
+    <div id="form">
+    <form action="" th:action="@{/updatePost}" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <div id="div1" class="form-group">
+                <label>Title:</label>
+                <br>
+                <textarea class="form-control" id="title" cols="60" rows="1" name="title" th:text="${post.getTitle()}"></textarea>
+            </div>
+            <div id="div2" class="form-group">
+                <label>Content:</label>
+                <br>
+                <textarea class="form-control" id="textarea" cols="60" rows="10"  name="content" th:text="${post.getContent()}"></textarea>
+            </div>
+            <div id="div3" class="form-group">
+                <label id="attachment">Attachment:</label>
+                <input id="file" class="form-control-file" type="file" name="file" >
+            </div>
+
+            <!--<td width="90%" ><input id="attachment" name="attachment" />-->
+
+            <!--<div th:if="${uploadMessage}">
+               <p th:text="${uploadMessage}"/>
+            </div>-->
+            <div>
+                <input type="text" name="postId" th:value="${post.getPostId()}" hidden/>
+            </div>
+
+        </fieldset>
+        <div id="div4">
+            <button class="btn  btn-primary " id="button" type="submit" name="repost"/>Finish and Post</button>
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>

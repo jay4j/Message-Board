@@ -1,0 +1,39 @@
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+div
+{
+    margin-top: 5px;
+    text-align: center;
+}
+input
+{
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+label
+{
+    margin-bottom: 70px;
+    font-size: 40px;
+}
+h1
+{
+    font-size: 50px;
+    text-align: center;
+}
+button
+{
+    width: 200px;
+    height: 50px;
+}
+
+.mb-4
+{
+    height: 200px;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    vertical-align: middle;
+}

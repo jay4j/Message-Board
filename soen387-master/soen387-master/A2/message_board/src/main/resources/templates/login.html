@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Signin Template for Bootstrap</title>
+		<!-- Custom styles for this template -->
+		<link th:href="@{/webjars/bootstrap/4.4.1-1/css/bootstrap.css}" rel="stylesheet">
+		<!-- Custom styles for this template-->
+		<link th:href="@{/asserts/css/signin.css}" rel="stylesheet">
+	</head>
+	<body class="text-center">
+	<form class="form-signin" th:action="@{/authentication}" method="post">
+		<!--<img class="mb-5" th:src="@{/asserts/img/bootstrap-solid.svg}"  alt="" width="72" height="72">-->
+		<img name="logo" class="mb-4" src="/asserts/img/bootstrap-solid.svg"  alt="" width="72" height="72">
+		<h1 class="h3 mb-3 font-weight-normal" >Please sign in</h1>
+		<label class="sr-only" >Username</label>
+		<input type="text" class="form-control" placeholder="UserId" name="userId"  required="" autofocus="">
+
+		<label class="sr-only"  >Password</label>
+		<input type="password" class="form-control"name="password" placeholder="Password"  required="">
+		<div class="checkbox mb-3">
+			<label>
+				<input type="checkbox" value="remember-me" th:name="remember"><label>Remember me</label>
+			</label>
+		</div>
+		<button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+		<button class="btn btn-lg btn-secondary btn-block" onclick="noFeature()">Sign up</button>
+		<p class="mt-5 mb-3 text-muted">© 2019-2020</p>
+
+		<a class="btn btn-sm" th:href="@{/index.html(l='fr_FR')}">Française</a>
+		<a class="btn btn-sm" th:href="@{/index.html(l='en_CA')}">English</a>
+	</form>
+
+	<script>
+		function noFeature() {
+			alert("Sorry! This feature is coming soon!");
+		}
+	</script>
+
+
+	</body>
+
+</html>

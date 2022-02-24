@@ -1,0 +1,59 @@
+<Concordia>
+	<user>
+		<username>fred zhang</username>
+		<userId>fred</userId>
+		<password>524ac0ac145a534e5d604f7a2ebff0632909e8a4ee533109bd12ea7593a4a2b0</password>
+		<membership>concordia</membership>
+		<email>fredzhang@gmail.com</email>
+	</user>
+	<user>
+		<username>admin</username>
+		<userId>admin</userId>
+		<password>08e36c7995812df245083197d10cf63dfe2352b940d8e4a9557c05dd032ac8d4</password>
+		<membership>admins</membership>
+		<email>admin@gmail.com</email>
+	</user>
+	<encs>
+		<user>
+			<username>juyang gu</username>
+			<userId>gu</userId>
+			<password>bd1315a1f7b6afb5e4606a76736211ef65f130592e499111037fb93fb23251f0</password>
+			<membership>encs</membership>
+			<email>junyanggu@gmail.com</email>
+		</user>
+		<comp>
+			<user>
+				<username>EdNasuka</username>
+				<userId>EdNasuka</userId>
+				<password>42eb5d1e1bb209c0966d5af6ab291428ef801f39a17202470c297332bee382de</password>
+				<membership>comp</membership>
+				<email>Jay@gmail.com</email>
+			</user>
+			<user>
+				<username>Joe Biden</username>
+				<userId>Biden</userId>
+				<password>9807de817579e23ad4555a832c40eaf38bbcd55e26d97c990ed32cb7e4522590</password>
+				<membership>comp</membership>
+				<email>Biden@gmail.com</email>
+			</user>
+		</comp>
+		
+		<soen>
+			<user>
+				<username>Jay</username>
+				<userId>Jay</userId>
+				<password>9116f53356f111f4053a8e2b96e2a0dedc2b029e1e104263df51d4092ed41932</password>
+				<membership>soen</membership>
+				<email>Jay@gmail.com</email>
+			</user>
+			<user>
+				<username>Donal Trump</username>
+				<userId>Trump</userId>
+				<password>d2714898f6462912a1e546399dca18da578229d0b8bf4c1c90c3cda833e4e59b</password>
+				<membership>soen</membership>
+				<email>Trump@gmail.com</email>
+			</user>
+			
+		</soen>
+	</encs>
+</Concordia>

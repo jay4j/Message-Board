@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete a post</title>
+    <script src="/asserts/js/bootstrap.js"></script>
+    <link href="/asserts/css/delete.css" th:type="css">
+    <link rel="stylesheet" href="/asserts/css/bootstrap.css">
+    <link rel="stylesheet" href="/asserts/css/delete.css">
+</head>
+<body>
+        <img name="logo" class="mb-4" src="/asserts/img/newlogo.png" alt="">
+
+        <h1 class="alert-warning">Delete your post here</h1>
+        <div>
+        <form th:action="@{/delete}" method="post">
+            <label>Type your target post Id</label>
+            <br>
+            <input type="text" placeholder="UserId" name="userId" >
+            <br>
+            <button class="btn btn-primary" type="submit" >Delete</button>
+        </form>
+
+    </div>
+</body>
+</html>

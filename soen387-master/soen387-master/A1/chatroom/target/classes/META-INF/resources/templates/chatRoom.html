@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Recording</title>
+
+    <link id="link" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .container
+        {text-align: center;}
+        textarea
+        {
+            text-align: left;
+            height: 200px;
+            width: 1000px;
+        }
+        #div1
+        {text-align: center;}
+        #date
+        {width:200px;}
+        #content
+        {width:800px;}
+
+
+
+    </style>
+</head>
+<body>
+
+<script>
+   jQuery(function ($)
+    {
+        $('#theme-button ul a').on('click', function ()
+        {
+            if ($(this).attr('name') != 'current')
+            {
+                $(this).attr('name');
+                var urlbeg = 'https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/'
+                var urlend = '/bootstrap.min.css'
+                var themeurl = urlbeg + $(this).text().toLowerCase() + urlend;
+                var link = $('link[rel="stylesheet"][href$="/bootstrap.min.css"]').attr('href', themeurl);
+
+                $('#theme-button ul a[name="current"]').text($(this).text());
+            }
+        })
+    });
+
+</script>
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">Concordia Chatroom</a>
+            <div class="nav navbar-nav pull-right">
+                <li id="theme-button" class="dropdown">
+                    <a href="#"  class="dropdown-toggle" data-toggle="dropdown">Change Theme <b class="caret"></b></a>
+                    <ul class="dropdown-menu ">
+                        <li><a href="#" name="current">Current</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#" name="cerulean">Cerulean</a></li>
+                        <li><a href="#" name="cosmo">Cosmo</a></li>
+                        <li><a href="#" name="cyborg">Cyborg</a></li>
+                        <li><a href="#" name="darkly">Darkly</a></li>
+                        <li><a href="#" name="flatly">Flatly</a></li>
+                        <li><a href="#" name="journal">Journal</a></li>
+                        <li><a href="#" name="lumen">Lumen</a></li>
+                        <li><a href="#" name="paper">Paper</a></li>
+                        <li><a href="#" name="readable">Readable</a></li>
+                        <li><a href="#" name="sandstone">Sandstone</a></li>
+                        <li><a href="#" name="simplex">Simplex</a></li>
+                        <li><a href="#" name="slate">Slate</a></li>
+                        <li><a href="#" name="solar">Solar</a></li>
+                        <li><a href="#" name="spacelab">Spacelab</a></li>
+                        <li><a href="#" name="superhero">Superhero</a></li>
+                        <li><a href="#" name="united">United</a></li>
+                        <li><a href="#" name="yeti">Yeti</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </div>
+
+<div class = "container">
+    <div id="div1">
+    <table id="table1" class="table table-bordered table-hover table-striped" cellspacing="0" cellpadding="0" >
+        <tr id="message" th:each="message : ${messages}">
+            <td id="content" th:text="${message.content}"></td>
+            <td id="name" style="width:21%;font-weight:normal;text-align:center;" th:text="${message.user}"></td>
+            <td id="date" th:text="${message.date}"></td>
+        </tr>
+    </table>
+    <br>
+    </div>
+
+    <form id="form1" th:action="@{/message}" th:method="post">
+
+        <textarea  placeholder="Type your message..." cols="80" rows="5"  name="message"></textarea>
+        <br>
+        <input type="text" name="username" value="" placeholder="Type your name"/>
+        <br><br>
+        <button type="submit" name="send" class="btn btn-primary">Send</button>
+    </form><br>
+    <form th:action="@{/refresh}" th:method="get">
+        <button  type="submit" class="btn btn-primary" name="refresh">Refresh</button><br>
+    </form>
+    <form class="form-group" th:action="@{/download}" th:method="GET">
+        <p th:text="${errorMsg1}" style="color:red"></p>
+        <label> Download Your Chat File<br>
+            From<input type="text" name="from" placeholder="yyyy/mm/dd hh:mm:ss"/>
+            to<input type="text" name="to" placeholder="yyyy/mm/dd hh:mm:ss"/>
+            <select class="dropdown-toggle" name = "format" style="color: black">
+                <option value = "txt">TXT</option>
+                <option value = "xml">XML</option>
+            </select>
+        </label>
+        <button type="submit" name="download" class="btn btn-primary">Download</button>
+    </form>
+    <form class="form-group" th:action="@{/clear}" th:method="GET">
+        <p th:text="${errorMsg2}" style="color:red"></p>
+        <label> Clear Your Chat History<br>
+            From<input type="text" name="from" placeholder="yyyy/mm/dd hh:mm:ss"/>
+            to<input type="text" name="to" placeholder="yyyy/mm/dd hh:mm:ss"/>
+        </label>
+        <button type="submit" name="clear" class="btn btn-primary">Clear</button>
+    </form>
+</div>
+</div>
+</body>
+</html>

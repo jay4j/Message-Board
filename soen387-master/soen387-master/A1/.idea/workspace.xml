@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd479e17-ae89-491f-a3d9-b971005ab9a9" name="Default Changelist" comment="Update frontend by using Bootstrap">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/chatroom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/chatroom.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/src/main/resources/static/css/chatroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/src/main/resources/static/css/chatroom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/src/main/resources/templates/chatRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/src/main/resources/templates/chatRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/target/classes/static/css/chatroom.css" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/target/classes/static/css/chatroom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/target/classes/templates/chatRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/target/classes/templates/chatRoom.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iiotokxRdmOorcanoRvtzjuzYD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chatroom/src/main/resources/static/css" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.webOptions" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chatroom/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/chatroom/src/main/resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chatroom/src/main/resources/static/css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ChatroomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="chatroom" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.concordia.chatroom.ChatroomApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd479e17-ae89-491f-a3d9-b971005ab9a9" name="Default Changelist" comment="" />
+      <created>1602399990459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602399990459</updated>
+      <workItem from="1602399992568" duration="16114000" />
+      <workItem from="1602554566059" duration="6504000" />
+      <workItem from="1602573342522" duration="115000" />
+      <workItem from="1602573769241" duration="9780000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update frontend by using Bootstrap">
+      <created>1602573210774</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602573210774</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update frontend by using Bootstrap">
+      <created>1602573358796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602573358796</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update frontend by using Bootstrap">
+      <created>1602573438237</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602573438237</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update frontend by using Bootstrap">
+      <created>1602576091732</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602576091733</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update frontend by using Bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update frontend by using Bootstrap" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="256" y="13" key="#ChatroomApplication" timestamp="1602407017151">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="256" y="13" key="#ChatroomApplication/0.0.1280.800@0.0.1280.800" timestamp="1602407017151" />
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602407098620">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1602407098620" />
+    <state x="100" y="0" key="CommitChangelistDialog2" timestamp="1602573275382">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="100" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1602573275382" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1602621169735">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1602621169735" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1602401293181" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1602621169734">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1602621169734" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1602401293178" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1602621169733">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1602621169733" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1602401293176" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1602621169735">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1602621169735" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1602401293180" />
+    <state width="1238" height="212" key="GridCell.Tab.1.bottom" timestamp="1602621169738">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1602621169738" />
+    <state width="1238" height="212" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1602401293209" />
+    <state width="1238" height="212" key="GridCell.Tab.1.center" timestamp="1602621169736">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1602621169736" />
+    <state width="1238" height="212" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1602401293206" />
+    <state width="1238" height="212" key="GridCell.Tab.1.left" timestamp="1602621169736">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1602621169736" />
+    <state width="1238" height="212" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1602401293183" />
+    <state width="1238" height="212" key="GridCell.Tab.1.right" timestamp="1602621169737">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1602621169737" />
+    <state width="1238" height="212" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1602401293207" />
+    <state x="255" y="106" key="NewModule_or_Project.wizard" timestamp="1602400532959">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="255" y="106" key="NewModule_or_Project.wizard/0.0.1280.800@0.0.1280.800" timestamp="1602400532959" />
+    <state x="141" y="0" key="SettingsEditor" timestamp="1602573448841">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="141" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1602573448841" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1602576310411">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1602576310411" />
+    <state x="428" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602573433490">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="428" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1602573433490" />
+    <state x="0" y="0" width="924" height="800" key="dock-window-1" timestamp="1602574186629">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="0" y="0" width="924" height="800" key="dock-window-1/0.23.1280.777@0.23.1280.777" timestamp="1602574186629" />
+    <state x="334" y="195" key="git4idea.merge.GitPullDialog" timestamp="1602576282435">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="334" y="195" key="git4idea.merge.GitPullDialog/0.0.1280.800@0.0.1280.800" timestamp="1602576282435" />
+    <state x="305" y="62" width="670" height="676" key="search.everywhere.popup" timestamp="1602410266375">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="62" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1602410266375" />
+  </component>
+</project>

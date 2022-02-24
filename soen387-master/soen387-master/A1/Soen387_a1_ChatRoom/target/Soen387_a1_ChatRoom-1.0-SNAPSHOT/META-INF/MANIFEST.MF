@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: Administrator
+Build-Jdk: 1.8.0_162
+
+=======
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: Administrator
+Build-Jdk: 1.8.0_162
+
+>>>>>>> c7c4cf8794e8e6d3a7514490f2bb8132db161006

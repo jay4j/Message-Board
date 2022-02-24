@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Board</title>
+    <script src="/asserts/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/asserts/css/bootstrap.css">
+    <link rel="stylesheet" href="/asserts/css/viewMessage.css">
+</head>
+<body>
+<img name="logo" class="mb-4" src="/asserts/img/newlogo.png" width="72" height="72" alt="">
+<div style="text-align: center">
+    <form action="" th:action="@{/back}" method="GET">
+        <button class="btn btn-primary" type="submit" name="back">Back</button>
+    </form>
+</div>
+
+
+<div id="content" style="text-align: center">
+    <table class="table table-hover table-bordered" id="table1" th:each="post : ${posts}">
+        <tr>
+            <td>User</td>
+            <td id="user" th:text="${post.getUserId()}"></td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td id="title" th:text="${post.getTitle()}"></td>
+        </tr>
+        <!--<tr id="userId" >
+            <td>UserId</td>
+            <td id="title" th:text="${post.getUserId()}"></td>
+        </tr><tr id="userId" >
+            <td>PostId</td>
+            <td id="title" th:text="${post.getPostId()}"></td>
+        </tr>-->
+        <tr>
+            <td>Content</td>
+            <td id="text" th:text="${post.getContent()}"></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td id="date" th:text="${post.getPostDate()}"></td>
+        </tr>
+        <tr>
+            <td>Attachment</td>
+            <!--<td id="attachment" th:text="${post.getAttachment().getFileName()}"></td>-->
+            <!--<td><a th:href="@{'/file?name=' + ${post.getAttachment().getFileName()}}" th:text="${post.getAttachment().getFileName()}"></a></td>-->
+            <td><a th:href="@{/file/{postId} (postId = ${post.getPostId()})}" th:text="${post.getAttachment().getFileName()}"></a></td>
+        </tr>
+        <tr>
+            <td>Edition</td>
+            <!-------------------add condition to display the message------------------->
+            <td id="edited" th:if="${post.isEdited() == true} " th:text = "Updated"></td>
+        </tr>
+        <br/><br/>
+    </table>
+</div>
+
+<div>
+    <!--<a href="postMessage.html"><button class="bt"> Back </button></a>-->
+        <form class="f" action="" th:action="@{/search}" method="GET">
+            <fieldset>
+                <div id="div1" class="col-sm-3">
+                <input style="margin-bottom: 10px" class="form-control" type="text" name="tag" placeholder="Enter Tag"/>
+                <input class="form-control"  type="text" name="userId" placeholder="Enter UserId"/>
+                From<input id="date1" class="form-control" type="text" name="from" placeholder="yyyy/mm/dd hh:mm:ss"/>
+                to<input id="date2" class="form-control" type="text" name="to" placeholder="yyyy/mm/dd hh:mm:ss"/>
+                <p th:text="${errorMsg}" style="color:red"></p>
+                <button class="btn btn-primary" type="submit" name="back">Search</button>
+                </div>
+
+            </fieldset>
+        </form>
+    <!--<a href=""><button class="bt"> Search </button></a>-->
+</div>
+
+</body>
+</html>

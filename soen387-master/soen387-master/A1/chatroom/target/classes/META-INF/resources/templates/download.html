@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Download</title>
+
+    <link th:href="@{webjars/bootstrap/3.3.7/css/bootstrap.css}" rel="stylesheet">
+</head>
+<body>
+<div>
+    <form action="/download" method="get">
+       Type your start time: <input type="text" id="start" name="start" placeholder="2020/01/01 00:00:00"/><br><br>
+       Type your end time: <input type="text" id="end" name="end" placeholder="2020/01/01 00:00:00"/><br><br>
+       Choose your file type:
+        <select name="type">
+        <option value ="text" th:checked="text">Txt</option>
+        <option value ="xml">Xml</option>
+        </select>
+        <input type="submit" value="Download">
+    </form>
+</div>
+</body>
+</html>

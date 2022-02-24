@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/A1/Soen387_a1_ChatRoom/Soen387_a1_ChatRoom.iml" filepath="$PROJECT_DIR$/A1/Soen387_a1_ChatRoom/Soen387_a1_ChatRoom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A1/chatroom/chatroom.iml" filepath="$PROJECT_DIR$/A1/chatroom/chatroom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A2/message_board/message_board.iml" filepath="$PROJECT_DIR$/A2/message_board/message_board.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/soen387project.iml" filepath="$PROJECT_DIR$/.idea/soen387project.iml" />
+    </modules>
+  </component>
+</project>
