@@ -4,11 +4,7 @@ display:
 spring:
   datasource:
     username: root
-<<<<<<< HEAD
     password: comp353
-=======
-    password:
->>>>>>> 64d2cc92f42eb012adf7b29f23612e01b07a1d68
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/concordia?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
     type: com.alibaba.druid.pool.DruidDataSource

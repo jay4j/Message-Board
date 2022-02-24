@@ -14,10 +14,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author Fred Zhang
- * @create 2020-05-07 10:05 PM
- */
 @Configuration
 public class DruidConfig {
     @ConfigurationProperties(prefix = "spring.datasource")
